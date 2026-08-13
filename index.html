@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Наша история ♥</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>❤️</text></svg>">
+
+  <!-- Шрифты с поддержкой кириллицы -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Cormorant:ital,wght@0,600;0,700;1,600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Фон: звёзды и летающие сердечки -->
+  <div class="stars"></div>
+  <div class="hearts" id="hearts"></div>
+
+  <!-- ═══════════ ОБЛОЖКА ═══════════ -->
+  <header class="hero">
+    <p class="hero-date">2 января 2026 года</p>
+    <h1>Наша история</h1>
+    <p class="hero-cities">Артёмыч <span class="heart">♥</span> Миланчик</p>
+    <a class="scroll-hint" href="#timer" aria-label="Листай вниз"></a>
+  </header>
+
+  <!-- ═══════════ СЧЁТЧИК «МЫ ВМЕСТЕ» ═══════════ -->
+  <section class="counter" id="timer">
+    <h2>Мы вместе уже</h2>
+    <div class="timer">
+      <div class="timer-item"><span id="days">0</span><small>дней</small></div>
+      <div class="timer-item"><span id="hours">0</span><small>часов</small></div>
+      <div class="timer-item"><span id="minutes">0</span><small>минут</small></div>
+      <div class="timer-item"><span id="seconds">0</span><small>секунд</small></div>
+    </div>
+    <p class="counter-note">…с 9 марта 2026 года</p>
+  </section>
+
+  <!-- ═══════════ ЛЕНТА ИСТОРИИ ═══════════ -->
+  <main class="timeline">
+
+    <!-- ═══ 2 января ═══ -->
+    <article class="event">
+      <div class="event-dot"></div>
+      <div class="event-card">
+        <span class="event-date">2 января 2026</span>
+        <h3>Наше знакомство</h3>
+        <div class="slider slider--tall">
+          <div class="slider-track">
+            <div class="slide"><img src="jun2.jpg" alt=""></div>
+            <div class="slide"><img src="jun3.jpg" alt=""></div>
+            <div class="slide"><img src="jun4.jpg" alt=""></div>
+          </div>
+          <button class="slider-arrow slider-arrow--prev" aria-label="Предыдущее фото">‹</button>
+          <button class="slider-arrow slider-arrow--next" aria-label="Следующее фото">›</button>
+          <button class="slider-expand" aria-label="На весь экран">🔍</button>
+          <div class="slider-dots"></div>
+          <div class="slider-counter"><span class="slider-current">1</span> / <span class="slider-total">3</span></div>
+        </div>
+        <p>День, с которого всё началось. В тот день я всё понял и надеялся. Уже на нашей второй встрече я не мог оторвать от тебя глаз, а эти прогулки, поход в кино когда мы сидели рядом. И твоя невероятная улыбка, которая сводит меня с ума и сейчас, улыбка ради которой я готов на всё.</p>
+      </div>
+    </article>
+
+    <!-- ═══ 10 января ═══ -->
+    <article class="event">
+      <div class="event-dot"></div>
+      <div class="event-card">
+        <span class="event-date">10 января 2026</span>
+        <h3>Я прыгал от счастья</h3>
+        <div class="slider">
+          <div class="slider-track">
+            <div class="slide"><img src="jun10.jpg" alt=""></div>
+            
+          </div>
+          <button class="slider-arrow slider-arrow--prev" aria-label="Предыдущее фото">‹</button>
+          <button class="slider-arrow slider-arrow--next" aria-label="Следующее фото">›</button>
+          <button class="slider-expand" aria-label="На весь экран">🔍</button>
+          <div class="slider-dots"></div>
+          <div class="slider-counter"><span class="slider-current">1</span> / <span class="slider-total">2</span></div>
+        </div>
+        <!-- ✏️ Замени текст на своё воспоминание об этом дне -->
+        <p>Ты даже не представляешь как я был счастлив в тот вечер, сколько было переживаний и твои слова стали для меня сказкой. Я прыгал как маленький от одного только сообщения и с того дня я точно всё понял.</p>
+      </div>
+    </article>
+
+    <!-- ═══ 23 января ═══ -->
+    <article class="event">
+      <div class="event-dot"></div>
+      <div class="event-card">
+        <span class="event-date">23 января 2026</span>
+        <h3>Первая совместная встреча</h3>
+        <div class="slider">
+          <div class="slider-track">
+            <div class="slide"><img src="jun23.jpg" alt=""></div>
+            
+          </div>
+          <button class="slider-arrow slider-arrow--prev" aria-label="Предыдущее фото">‹</button>
+          <button class="slider-arrow slider-arrow--next" aria-label="Следующее фото">›</button>
+          <button class="slider-expand" aria-label="На весь экран">🔍</button>
+          <div class="slider-dots"></div>
+          <div class="slider-counter"><span class="slider-current">1</span> / <span class="slider-total">2</span></div>
+        </div>
+        <!-- ✏️ Замени текст на своё воспоминание об этом дне -->
+        <p>Помню тот вкчер словно вчера. Я ехал с работы, и не просто ехал, а ехал к тебе с полными радости глазами. Тогда мы были в "ВилкиНет" и в этом месте ты первый раз меня поцеловала в щёчку, ты стала первой и единственной девушкой на свете кто поцелвал меня.</p>
+      </div>
+    </article>
+
+    <!-- ═══ 27 февраля ═══ -->
+    <article class="event">
+      <div class="event-dot"></div>
+      <div class="event-card">
+        <span class="event-date">27 февраля 2026</span>
+        <h3>Твой день рождения</h3>
+        <div class="slider">
+          <div class="slider-track">
+            <div class="slide"><img src="fev27.jpg" alt=""></div>
+            <div class="slide"><img src="fev277.jpg" alt=""></div>
+            <div class="slide"><img src="fev2777.jpg" alt=""></div>
+            <div class="slide"><img src="fev277777.jpg" alt=""></div>
+            <div class="slide"><img src="fev27777777.jpg" alt=""></div>
+          </div>
+          <button class="slider-arrow slider-arrow--prev" aria-label="Предыдущее фото">‹</button>
+          <button class="slider-arrow slider-arrow--next" aria-label="Следующее фото">›</button>
+          <button class="slider-expand" aria-label="На весь экран">🔍</button>
+          <div class="slider-dots"></div>
+          <div class="slider-counter"><span class="slider-current">1</span> / <span class="slider-total">3</span></div>
+        </div>
+        <p>Твой день — и мне посчастливилось быть рядом. Твоя улыбка, смех и тепло того вечера. Мне было неважно кто находился вокруг, в тот день я видел лишь тебя.</p>
+      </div>
+    </article>
+
+    <!-- ═══ 8 марта ═══ -->
+    <article class="event">
+      <div class="event-dot"></div>
+      <div class="event-card">
+        <span class="event-date">8 марта 2026</span>
+        <h3>Последнее «просто друзья»</h3>
+        <div class="slider">
+          <div class="slider-track">
+            <div class="slide"><img src="mrt8.jpg" alt=""></div>
+            
+          </div>
+          <button class="slider-arrow slider-arrow--prev" aria-label="Предыдущее фото">‹</button>
+          <button class="slider-arrow slider-arrow--next" aria-label="Следующее фото">›</button>
+          <button class="slider-expand" aria-label="На весь экран">🔍</button>
+          <div class="slider-dots"></div>
+          <div class="slider-counter"><span class="slider-current">1</span> / <span class="slider-total">2</span></div>
+        </div>
+        <!-- ✏️ Замени текст на своё воспоминание об этом дне -->
+        <p>С Дня Рождения прошла всего неделя, но мы уже невероятно скучали друг по другу, помню как ты сильно хотела чтобы я приехал и другого сценария быть не могло. Я поздравлял тебя, ещё не зная, что уже завтра всё изменится. Но, кажется, мы оба это чувствовали.</p>
+      </div>
+    </article>
+
+    <!-- ═══ 9 марта ═══ -->
+    <article class="event">
+      <div class="event-dot"></div>
+      <div class="event-card">
+        <span class="event-date">9 марта 2026</span>
+        <h3>Мы теперь вместе</h3>
+        <div class="slider">
+          <div class="slider-track">
+            <div class="slide"><img src="mrt9.jpg" alt=""></div>
+            
+          </div>
+          <button class="slider-arrow slider-arrow--prev" aria-label="Предыдущее фото">‹</button>
+          <button class="slider-arrow slider-arrow--next" aria-label="Следующее фото">›</button>
+          <button class="slider-expand" aria-label="На весь экран">🔍</button>
+          <div class="slider-dots"></div>
+          <div class="slider-counter"><span class="slider-current">1</span> / <span class="slider-total">3</span></div>
+        </div>
+        <p>День, когда мы официально стали парой. Один из самых счастливых дней в моей жизни. Когда я увидел твоё сообщение я чуть не упал с кровати, просто летел в космос.</p>
+      </div>
+    </article>
+
+    <!-- ═══ 21 марта ═══ -->
+    <article class="event">
+      <div class="event-dot"></div>
+      <div class="event-card">
+        <span class="event-date">21 марта 2026</span>
+        <h3>Твоё первое признание</h3>
+        <div class="slider">
+          <div class="slider-track">
+            <div class="slide"><img src="mrt21.jpg" alt=""></div>
+            
+          </div>
+          <button class="slider-arrow slider-arrow--prev" aria-label="Предыдущее фото">‹</button>
+          <button class="slider-arrow slider-arrow--next" aria-label="Следующее фото">›</button>
+          <button class="slider-expand" aria-label="На весь экран">🔍</button>
+          <div class="slider-dots"></div>
+          <div class="slider-counter"><span class="slider-current">1</span> / <span class="slider-total">2</span></div>
+        </div>
+        <!-- ✏️ Замени текст на своё воспоминание об этом дне -->
+        <p>В этот день ты первый раз сказала что любишь меня и для меня эти слова до сих пор остаются самыми ценными на планете.</p>
+      </div>
+    </article>
+
+    <!-- ═══ 10 апреля ═══ -->
+    <article class="event">
+      <div class="event-dot"></div>
+      <div class="event-card">
+        <span class="event-date">10 апреля 2026</span>
+        <h3>Апрельская встреча</h3>
+        <div class="slider">
+          <div class="slider-track">
+            <div class="slide"><img src="apr10.jpg" alt=""></div>
+            <div class="slide"><img src="apr11.jpg" alt=""></div>
+            <div class="slide"><img src="apr12.jpg" alt=""></div>
+            <div class="slide"><img src="apr13.jpg" alt=""></div>
+            <div class="slide"><img src="apr14.jpg" alt=""></div>
+            <div class="slide"><img src="apr15.jpg" alt=""></div>
+          </div>
+          <button class="slider-arrow slider-arrow--prev" aria-label="Предыдущее фото">‹</button>
+          <button class="slider-arrow slider-arrow--next" aria-label="Следующее фото">›</button>
+          <button class="slider-expand" aria-label="На весь экран">🔍</button>
+          <div class="slider-dots"></div>
+          <div class="slider-counter"><span class="slider-current">1</span> / <span class="slider-total">2</span></div>
+        </div>
+        <!-- ✏️ Замени текст на своё воспоминание об этом дне -->
+        <p>Твои каникулы! Тогда мы сняли квартиру и провели в ней два дня. Смотрели фильмы, готовили, смеялись. Каждая встреча была маленьким праздником.</p>
+      </div>
+    </article>
+
+    <!-- ═══ 9 мая ═══ -->
+    <article class="event">
+      <div class="event-dot"></div>
+      <div class="event-card">
+        <span class="event-date">9 мая 2026</span>
+        <h3>Встреча 9 мая</h3>
+        <div class="slider">
+          <div class="slider-track">
+            <div class="slide"><img src="may9.jpg" alt=""></div>
+            <div class="slide"><img src="may10.jpg" alt=""></div>
+            <div class="slide"><img src="may11.jpg" alt=""></div>
+            <div class="slide"><img src="may12.jpg" alt=""></div>
+          </div>
+          <button class="slider-arrow slider-arrow--prev" aria-label="Предыдущее фото">‹</button>
+          <button class="slider-arrow slider-arrow--next" aria-label="Следующее фото">›</button>
+          <button class="slider-expand" aria-label="На весь экран">🔍</button>
+          <div class="slider-dots"></div>
+          <div class="slider-counter"><span class="slider-current">1</span> / <span class="slider-total">2</span></div>
+        </div>
+        <p>На эти праздники я приехал к тебе, помню как я выбирал букет этих нежных роз и уже не мог сдерживаться от фантазий как мы встетимся. Мы гуляли, были на даче, много болтали, выходные прошли лучше некуда.</p>
+      </div>
+    </article>
+
+    <!-- ═══ 30 мая ═══ -->
+    <article class="event">
+      <div class="event-dot"></div>
+      <div class="event-card">
+        <span class="event-date">30 мая 2026</span>
+        <h3>День рождения твоей бабушки</h3>
+        <div class="slider">
+          <div class="slider-track">
+            <div class="slide"><img src="dr1.jpg" alt=""></div>
+            <div class="slide"><img src="dr2.jpg" alt=""></div>
+            <div class="slide"><img src="dr3.jpg" alt=""></div>
+            <div class="slide"><img src="dr4.jpg" alt=""></div>
+            <div class="slide"><img src="dr5.jpg" alt=""></div>
+          </div>
+          <button class="slider-arrow slider-arrow--prev" aria-label="Предыдущее фото">‹</button>
+          <button class="slider-arrow slider-arrow--next" aria-label="Следующее фото">›</button>
+          <button class="slider-expand" aria-label="На весь экран">🔍</button>
+          <div class="slider-dots"></div>
+          <div class="slider-counter"><span class="slider-current">1</span> / <span class="slider-total">2</span></div>
+        </div>
+        <!-- ✏️ Замени текст на своё воспоминание об этом дне -->
+        <p>Тогда ты активно готовилась к экзаменам, но всё таки приехала. Любая возможность для встречи была для меня подарком. Мы встетились и провели тот день вместе.</p>
+      </div>
+    </article>
+
+    <!-- ═══ 26 июня ═══ -->
+    <article class="event">
+      <div class="event-dot"></div>
+      <div class="event-card">
+        <span class="event-date">26 июня 2026</span>
+        <h3>Твой выпускной</h3>
+        <div class="slider">
+          <div class="slider-track">
+            <div class="slide"><img src="vp1.jpg" alt=""></div>
+            <div class="slide"><img src="vp2.jpg" alt=""></div>
+            <div class="slide"><img src="vp3.jpg" alt=""></div>
+          </div>
+          <button class="slider-arrow slider-arrow--prev" aria-label="Предыдущее фото">‹</button>
+          <button class="slider-arrow slider-arrow--next" aria-label="Следующее фото">›</button>
+          <button class="slider-expand" aria-label="На весь экран">🔍</button>
+          <div class="slider-dots"></div>
+          <div class="slider-counter"><span class="slider-current">1</span> / <span class="slider-total">3</span></div>
+        </div>
+        <p>Ты сияла в этот день. Я стоял в зале, смотрел на тебя и просто улыбался, гордился тем, что самая красивая и мудрая девушка — моя. Про летний стиль забыть я тоже не смог, ведь всё это наша история.</p>
+      </div>
+    </article>
+
+    <!-- ═══ Июль ═══ -->
+    <article class="event">
+      <div class="event-dot"></div>
+      <div class="event-card">
+        <span class="event-date">Июль 2026</span>
+        <h3>Жаркий июль</h3>
+        <div class="slider">
+          <div class="slider-track">
+            <div class="slide"><img src="ul1.jpg" alt=""></div>
+            <div class="slide"><img src="ul2.jpg" alt=""></div>
+            <div class="slide"><img src="ul3.jpg" alt=""></div>
+            <div class="slide"><img src="ul4.jpg" alt=""></div>
+          </div>
+          <button class="slider-arrow slider-arrow--prev" aria-label="Предыдущее фото">‹</button>
+          <button class="slider-arrow slider-arrow--next" aria-label="Следующее фото">›</button>
+          <button class="slider-expand" aria-label="На весь экран">🔍</button>
+          <div class="slider-dots"></div>
+          <div class="slider-counter"><span class="slider-current">1</span> / <span class="slider-total">2</span></div>
+        </div>
+        <!-- ✏️ Замени текст на своё воспоминание -->
+        <p>Мы всё ещё виделись раз в месяц, но даже через расстояние июль был тёплым — благодаря звонкам, сообщениям и ожиданию встреч.</p>
+      </div>
+    </article>
+
+    <!-- ═══ Август ═══ -->
+    <article class="event">
+      <div class="event-dot"></div>
+      <div class="event-card">
+        <span class="event-date">Август 2026</span>
+        <h3>Этот август</h3>
+        <div class="slider">
+          <div class="slider-track">
+            <div class="slide"><img src="ag1.jpg" alt=""></div>
+            
+          </div>
+          <button class="slider-arrow slider-arrow--prev" aria-label="Предыдущее фото">‹</button>
+          <button class="slider-arrow slider-arrow--next" aria-label="Следующее фото">›</button>
+          <button class="slider-expand" aria-label="На весь экран">🔍</button>
+          <div class="slider-dots"></div>
+          <div class="slider-counter"><span class="slider-current">1</span> / <span class="slider-total">2</span></div>
+        </div>
+        <!-- ✏️ Замени текст на своё воспоминание -->
+        <p>Этот месяц мы пишем прямо сейчас. И я точно знаю: впереди — самое интересное.</p>
+      </div>
+    </article>
+
+    <!-- ═══ КАК ДОБАВИТЬ НОВОЕ СОБЫТИЕ ═══
+         Скопируй этот блок, вставь ВЫШЕ этого комментария и заполни своё:
+
+    <article class="event">
+      <div class="event-dot"></div>
+      <div class="event-card">
+        <span class="event-date">ДАТА</span>
+        <h3>ЗАГОЛОВОК</h3>
+        <div class="slider">
+          <div class="slider-track">
+            <div class="slide"><img src="images/фото1.jpg" alt=""></div>
+            <div class="slide"><img src="images/фото2.jpg" alt=""></div>
+          </div>
+          <button class="slider-arrow slider-arrow--prev" aria-label="Предыдущее фото">‹</button>
+          <button class="slider-arrow slider-arrow--next" aria-label="Следующее фото">›</button>
+          <button class="slider-expand" aria-label="На весь экран">🔍</button>
+          <div class="slider-dots"></div>
+          <div class="slider-counter"><span class="slider-current">1</span> / <span class="slider-total">2</span></div>
+        </div>
+        <p>ТВОЙ ТЕКСТ</p>
+      </div>
+    </article>
+
+    ЕСЛИ ФОТО ВЕРТИКАЛЬНЫЕ — добавь класс slider--tall:
+    <div class="slider slider--tall">
+
+    Если фото ОДНО — вместо слайдера можно просто:
+    <img class="single-photo" src="images/фото.jpg" alt="">
+    ════════════════════════════════════ -->
+
+    <!-- ═══ Финальная карточка: видео + письмо ═══ -->
+    <article class="event final">
+      <div class="event-dot"></div>
+      <div class="event-card">
+        <span class="event-date">Сегодня</span>
+        <h3>…и это только начало</h3>
+        <p>Эта страница будет пополняться новыми датами, фотографиями и видео. Потому что самое интересное в нашей истории ещё впереди.</p>
+        <button class="letter-btn video-btn" id="openVideo">🎬 Наша сказка</button>
+        <button class="letter-btn" id="openLetter">💌 Открыть письмо</button>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- ═══════════ ФИНАЛ ═══════════ -->
+  <footer class="footer">
+    <p class="footer-big">Я люблю тебя ♥</p>
+    <p>Этот сайт будет расти вместе с нашей историей</p>
+  </footer>
+
+  <!-- ═══════════ ПИСЬМО (всплывающее) ═══════════ -->
+  <div class="letter-overlay" id="letterOverlay">
+    <div class="letter">
+      <button class="letter-close" id="closeLetter" aria-label="Закрыть письмо">×</button>
+      <p class="letter-title">Моей самой любимой</p>
+
+      <!-- ✏️ Это текст письма — замени на свои слова, если захочешь -->
+      <div class="letter-text">
+        <p>Привет, моя дорогая Миланчик!</p>
+        <p>Если ты читаешь это — значит, прошла вместе со мной весь наш путь. От того январского дня и до этой минуты. Ты моя самая невероятная, красивая, мудрая, милая, невозможно описать словами какая ты на самом деле, спасибо что дала возможность быть твоим. </p>
+        <p>Я помню каждую нашу встречу: как мы познакомились 2 января, как я волновался перед твоим днём рождения, как 9 марта сердце стучало как сумасшедшее — и теперь это мои любимые и самые тёплые воспоминания в жизни.</p>
+        <p>Конечно в нашей истории не обошлось без недопониманий, знаю что ты могла во мне усомниться, на что-то обидеться, думать что я холодный. В этом думаю определённо есть моя вина, и за каждый такой миг я тысячу раз извиняюсь, ведь заставил тебя усомниться, задуматься.</p>
+        <p>Эти месяцы, когда километры разделяли нас, научили меня главному: расстояние — это не про километры, это про человека. И ты — та, ради которой я готов ехать куда угодно и ждать сколько угодно.</p>
+        <p>Спасибо тебе за твою улыбку, твою красоту, твой смех, за твоё тепло, за то, что ты есть. Спасибо, что делаешь обычные дни — праздниками.</p>
+        <p>Этот сайт — моё маленькое признание. Ведь порой не всегда есть момент сказать такие слова в жизни, кто-то рядом или неподходящий момент, но знай что я каждую нашу встречу хочу говорить о том, как тебя люблю. Я сделаю всё, чтобы ты была счастлива.</p>
+        
+        <p>Я люблю тебя. Сильнее, чем это можно написать или передать словами.</p>
+      </div>
+
+      <p class="letter-sign">Навсегда твой Тёма ♥</p>
+    </div>
+  </div>
+
+  <!-- ═══════════ ВИДЕО «НАША СКАЗКА» (всплывающее) ═══════════ -->
+  <div class="video-overlay" id="videoOverlay">
+    <div class="video-box">
+      <button class="video-close" id="closeVideo" aria-label="Закрыть видео">×</button>
+      <p class="video-title">Наша сказка 🎬</p>
+      <!-- Файл видео лежит в папке videos. Если назовёшь иначе — поменяй src -->
+      <video id="fairyVideo" controls playsinline preload="metadata" src="skazka.mp4"></video>
+    </div>
+  </div>
+
+  <!-- ═══════════ ПОЛНОЭКРАННЫЙ ПРОСМОТР ФОТО ═══════════ -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Закрыть">×</button>
+    <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Предыдущее фото">‹</button>
+    <img id="lightboxImg" src="" alt="">
+    <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Следующее фото">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
